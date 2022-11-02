@@ -419,7 +419,17 @@ line-height:calc(24 / 14);
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
+.footer .container{
+    display: flex;
+    align-items: baseline;
+}
+.footer-container{
     
+    width: 206px;
+    height: 80px;
+    margin-right: auto;
+    margin-left: 70px;
+}
 
 .footer-join{
 justify-content: center;
@@ -429,6 +439,7 @@ line-height:calc(16 / 14);
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #FFFFFF;
+
 }
 
 .socials-footer-icon{
@@ -447,6 +458,16 @@ color: #FFFFFF;
     color:#FFFFFF;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+}
+.footer-icon{
+    color:#ffffff ;
+}
+.icon{
+    fill: currentColor;
+}
+.socials-footer:hover,
+.socials-footer:focus{
+    background: #2196F3;
 }
 
 
