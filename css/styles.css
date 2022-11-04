@@ -98,6 +98,8 @@ display: inline-block;
 }
 .header-tel-link,
 .header-mail-link{
+    display: flex;
+    align-items: center;
 font-weight: 500;
 font-size: 14px;
 line-height:calc(16 / 14);
@@ -128,7 +130,11 @@ padding-bottom: 32px;
 .order-service{
     max-width: 1600px;
     background:var(--background-color);
-    background-image: url(../images/background.jpg);
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../images/background.jpg);
+
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -201,6 +207,9 @@ margin: -1px;
    background: #F5F4FA;
 border-radius: 4px;
 margin-bottom: 30px;
+}
+.our-features:hover{
+
 }
 .main-item{
 font-weight: 700;
@@ -358,7 +367,6 @@ margin-bottom: 50px;
     width: 170px;
     height: 92px;
     color: #AFB1B8;
-    background: #F5F5F5;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
@@ -444,6 +452,7 @@ color: #FFFFFF;
 
 .socials-footer-icon{
     display: flex;
+    align-items: center;
     margin-top: 20px;
     gap: 10px;
 }
@@ -545,14 +554,16 @@ text-align: center;
 letter-spacing: 0.03em;
 padding: 6px 22px;
 }
-.main-button:hover
-{
+.main-button:hover{
 background:var(--accent-color);
 color:var(--text-color)
 }
+
 .main-button:focus{
-    background:var(--accent-color)
+    background:var(--accent-color);
+    color:var(--text-color)
 }
+
 .portfolio-card{
     border-bottom: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
